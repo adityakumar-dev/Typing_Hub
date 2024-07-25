@@ -3,17 +3,21 @@ import axios from 'axios';
 const getParagraphApi = async () => {
     const options = {
         method: 'GET',
-        url: 'https://baconipsum.com/api/?type=all-meat&sentences=3'
+        url: 'https://baconipsum.com/api/?type=all-meat&sentences=100'
 
     };
 
     try {
         const response = await axios.request(options);
         console.log(response.data);
-        return response.data;
+        if (response.status === 200) {
+            console.log(response.data)
+            return response.data;
+
+        }
+
     } catch (error) {
-        console.error('Error fetching data:', error.message); // Improved error logging
-        throw error; // Optionally re-throw the error for handling elsewhere
+        console.error('Error fetching data:', error.message);
     }
 };
 

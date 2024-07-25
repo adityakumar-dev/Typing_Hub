@@ -1,0 +1,63 @@
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+
+$primary: $gray-900 ;
+// $secondary: $gray-600 ;
+// $success: $green ;
+// $info: $cyan ;
+// $danger: $red ;
+
+@font-face {
+    font-family: 'Pristina';
+    src: url('./fonts/PRISTINA.TTF');
+    font-weight: normal;
+    font-size: normal;
+}
+
+.paragraph-container {
+
+    white-space: pre-wrap;
+
+    position: relative;
+
+}
+
+.word {
+    color: rgb(78, 74, 74);
+
+
+}
+
+.correct {
+
+    color: white !important;
+
+
+}
+
+.error {
+    color: red !important;
+}
+
+.scrollable-container {
+    max-height: 70vh;
+    text-align: justify;
+
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss'
